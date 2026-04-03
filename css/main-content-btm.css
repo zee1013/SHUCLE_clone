@@ -1,0 +1,142 @@
+/* 데이터 */
+.data-wrap{
+    position: relative;
+    width: 100%;
+    height: 65vw;
+    max-height: 700px;
+    min-height: 500px;
+}
+.data-wrap img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.data-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.data-inner{
+    /* padding: 5% 0; */
+    max-height: 700px;
+    min-height: 500px;
+    color: #fff;
+}
+.data-txt p{
+    /* padding-top: 3%; */
+    padding: 3% 0;
+    font-size: clamp(14px, 2vw, 21px);
+}
+/* 데이터 그래프 */
+.data-graph{
+    width: 100%;
+    display: flex;
+    gap: 1.5%;
+}
+.data-graph li{
+    width: calc(100% / 4);
+}
+.data-graph li img{
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+.data-graph li p{
+    padding-top: 7%;
+    font-size: clamp(14px, 2vw, 18px);
+}
+.data-graph li h3{
+    padding-top: 3%;
+    font-size: clamp(21px, 3vw, 38px);
+    font-weight: 800;
+}
+/* 파트너십 */
+.part-inner{
+    padding: 7% 0;
+    text-align: center;
+}
+.part-inner p{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.part-list{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    row-gap: 10px;
+}
+.part-list li{
+    width: calc((100% - 7%) / 8);
+    border-radius: 10%;
+    overflow: hidden;
+}
+.part-list li img{
+    width: 100%;
+    display: block;
+}
+/* 앱 설치 */
+.app{
+    width: 100%;
+    position: relative;
+    height: 52vw;
+    max-height: 645px;
+    background: url(../img/bg_app2.webp) no-repeat center;
+    background-size: cover;
+}
+.app::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.app img{
+    width: 100%;
+    height: 100%;;
+    display: block;
+}
+.app-txt{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.app-box{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    color: #fff;
+}
+.app-box p{
+    padding: 7% 0;
+    font-size: clamp(14px, 2vw, 18px);
+}
+.app-logo{
+    display: flex;
+    gap: 1.5%;
+}
+.app-logo li{
+    width: 150px;
+}
+/* 바로가기 */
+.shortcut{
+    width: 100%;
+    padding: 3% 0;
+    background-color: hsla(219.52, 74.12%, 33.33%, 1);
+}
+.shortcut-list{
+    display: flex;
+    gap: 10%;
+}
+.shortcut-list li{
+    width: calc(100% / 2);
+}
+.shortcut-list li a img{
+    width: 100%;
+    display: block;
+}

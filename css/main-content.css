@@ -1,18 +1,17 @@
 /* 셔클 소개 */
 .info-inner{
-    padding: 100px 0;
+    padding: 5% 0;
 }
 .info-txt{
-    padding-bottom: 40px;
+    padding-bottom: 4%;
 }
 .info-inner h4{
-    font-size: 24px;
+    font-size: clamp(18px, 2vw, 24px);
     padding-bottom: 20px;
     color: #121212;
 }
 .info-inner p{
-    font-size: 20px;
-
+    font-size: clamp(14px, 1vw, 21px);
     color: #121212;
 }
 /* 셔클 이미지 */
@@ -26,6 +25,102 @@
     overflow: hidden;
 }
 .info-img li img{
+    width: 100%;
+    display: block;
+}
+/* 기술 소개 / 기술 보기 */
+.produce{
+    position: relative;
+    width: 100%;
+    height: 29.4vw;
+    max-height: 550px;
+    min-height: 300px;
+}
+.produce img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.produce-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f9f9f9;
+}
+.produce-inner h2{
+    margin-bottom: 7%;
+}
+.produce-inner p{
+    margin-bottom: 9%;
+    font-size: clamp(14px, 2vw, 21px);
+    line-height: 1.5;
+}
+.produce-inner .btn{
+    color: #000;
+    background-color: #f9f9f9;
+}
+/* 솔루션 */
+.solution{
+    width: 100%;
+    padding: 5% 0;
+    background-color: #eff3fa;
+}
+.solution-txt{
+    padding-bottom: 5%;
+    text-align: center;
+}
+.solution-txt h2{
+    margin-bottom: 2%;
+}
+.solution-txt p{
+    margin-bottom: 5%;
+    font-size: clamp(14px, 2vw, 21px);
+    line-height: 1.5;
+}
+.solution .btn{
+    color: #fff;
+    background-color: #000;
+}
+/* 솔루션 이미지 */
+.solution-img{
+    display: flex;
+    gap: 1.5%;
+    width: 100%;
+}
+.solution-img li{
+    width: calc(100% /4);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.solution-img li img{
+    width: 100%;
+    display: block;
+}
+/* 도입 사례 */
+.ttokta-inner{
+    padding: 5% 0;
+    text-align: center;
+    color: #121212;
+}
+.ttokta-inner h2{
+    margin-bottom: 2%;
+}
+.ttokta-inner p{
+    margin-bottom: 5%;
+    font-size: clamp(14px, 2vw, 21px);
+    font-weight: 500;
+}
+.ttokta-inner .btn{
+    color: #fff;
+    background-color: #000;
+}
+.ttokta-img{
+    width: 850px;
+    margin: auto;
+}
+.ttokta-img img{
     width: 100%;
     display: block;
 }

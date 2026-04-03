@@ -13,7 +13,7 @@
   /* background-color: aliceblue; */
 }
 .header-logo {
-  width: 120px;
+  width: 10%;
   /* overflow: hidden; */
 }
 .header-logo a img {
@@ -35,7 +35,7 @@
 .menu-list li {
   width: calc(100% / 6);
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
 }
 .menu-list li a{
     position: relative;
