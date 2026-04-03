@@ -1,0 +1,31 @@
+/* 셔클 소개 */
+.info-inner{
+    padding: 100px 0;
+}
+.info-txt{
+    padding-bottom: 40px;
+}
+.info-inner h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #121212;
+}
+.info-inner p{
+    font-size: 20px;
+
+    color: #121212;
+}
+/* 셔클 이미지 */
+.info-img{
+    display: flex;
+    gap: 1.5%;
+}
+.info-img li{
+    width: calc(100% / 4);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.info-img li img{
+    width: 100%;
+    display: block;
+}
