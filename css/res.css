@@ -1,0 +1,5 @@
+@media (max-width:768px){
+    .info-img li, .solution-img li{
+        width: calc((100% - 1.5%) / 2);
+    }
+}

@@ -17,10 +17,11 @@
 /* 셔클 이미지 */
 .info-img{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5%;
 }
 .info-img li{
-    width: calc(100% / 4);
+    width: calc((100% - 4.5%) / 4);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -32,9 +33,18 @@
 .produce{
     position: relative;
     width: 100%;
-    height: 29.4vw;
-    max-height: 550px;
-    min-height: 300px;
+    height: 40vw;
+    max-height: 600px;
+    min-height: 500px;
+}
+.produce::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .produce img{
     width: 100%;
@@ -48,6 +58,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #f9f9f9;
+    z-index: 99;
 }
 .produce-inner h2{
     margin-bottom: 7%;
@@ -59,7 +70,10 @@
 }
 .produce-inner .btn{
     color: #000;
-    background-color: #f9f9f9;
+    background-color: #fff;
+}
+.produce-inner .btn:hover{
+    background-color: #b0bbce;
 }
 /* 솔루션 */
 .solution{
@@ -83,14 +97,18 @@
     color: #fff;
     background-color: #000;
 }
+.solution .btn:hover{
+    background-color: #333;
+}
 /* 솔루션 이미지 */
 .solution-img{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5%;
     width: 100%;
 }
 .solution-img li{
-    width: calc(100% /4);
+    width: calc((100% - 4.5%) /4);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -116,11 +134,17 @@
     color: #fff;
     background-color: #000;
 }
+.ttokta-inner .btn:hover{
+    background-color: #333;
+}
 .ttokta-img{
-    width: 850px;
+    /* width: 850px; */
+    width: 100%;
+    max-width: 849px;
     margin: auto;
 }
 .ttokta-img img{
     width: 100%;
+    height: 100%;
     display: block;
 }

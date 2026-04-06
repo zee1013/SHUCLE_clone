@@ -2,7 +2,10 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1"
+    />
     <!-- 파비콘 -->
     <link
       rel="icon"
@@ -41,7 +44,11 @@
     <meta property="og:description" content="SHUCLE 웹사이트입니다." />
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>SHUCLE</title>
+    <!-- 자바스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- 전체 -->
@@ -76,11 +83,31 @@
       <main class="main">
         <!-- 비주얼 -->
         <div class="main-visual">
-          <div class="visual-inner inner">
-            <h1 class="visual-txt">
+          <div class="swiper visual-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/main_visual.png" alt="메인 비주얼1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main_visual2.PNG" alt="메인 비주얼2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main_visual3.PNG" alt="메인 비주얼3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/main_visual4.PNG" alt="메인 비주얼4" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="visual-inner">
+            <div class="inner">
+              <h1 class="visual-txt">
               지속가능한 도시를 위한<br />
               통합모빌리티 플랫폼, 셔클
             </h1>
+            </div>
+            
           </div>
         </div>
         <!-- 셔클 소개 -->
@@ -329,22 +356,50 @@
           </div>
         </div>
         <!-- 바로가기 -->
-         <div class="shortcut">
+        <div class="shortcut">
           <div class="inner">
             <ul class="shortcut-list">
               <li>
                 <a href="#">
-                  <img src="img/img_email2.webp" alt="제휴">
+                  <img src="img/img_email2.webp" alt="제휴" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/img_email1.webp" alt="서비스 신청">
+                  <img src="img/img_email1.webp" alt="서비스 신청" />
                 </a>
               </li>
             </ul>
           </div>
-         </div>
+        </div>
+        <!-- 푸터 -->
+        <footer class="footer">
+          <div class="footer-inner inner">
+            <div class="footer-top">
+              <ul class="footer-list">
+                <li>
+                  <a href="#"><b>개인정보 처리방침</b></a>
+                </li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">위치 기반 서비스 이용약관</a></li>
+                <li><a href="#">규제샌드박스</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">현대자동차그룹</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-btm">
+              <p>COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</p>
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="img/logo_1.webp" alt="현대자동차그룹 로고" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   </body>

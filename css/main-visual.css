@@ -1,19 +1,51 @@
 .main{
     width: 100%;
+    position: absolute;
+    top: 81px;
+    left: 0;
 }
 .main-visual{
+    position: relative;
     /* position: absolute;
     top: 74px; */
     width: 100%;
     /* height: 500px; */
     height: 26vw;
     max-height: 550px;
-    min-height: 300px;
-    background: url(../img/main_visual.png) no-repeat center;
-    background-size: cover;
+    min-height: 500px;
+    /* background: url(../img/main_visual.png) no-repeat center;
+    background-size: cover; */
 }
-.visual-inner{
+.swiper {
     position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+.visual-inner{
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(0 -50%); */
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.visual-inner .inner{
     width: 100%;
     height: 100%;
 }

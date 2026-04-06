@@ -1,10 +1,10 @@
 .header {
-    /* position: fixed; */
+    position: fixed;
   width: 100%;
   padding: 1%;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  /* z-index: 99; */
+  z-index: 999;
 }
 .header-inner {
   display: flex;
@@ -40,6 +40,7 @@
 .menu-list li a{
     position: relative;
     display: inline-block;
+    /* font-weight: bold; */
 }
 .menu-list li a::after{
     content: "";
@@ -47,7 +48,7 @@
     bottom: -2px;
     left: 0;
     width: 0px;
-    height: 1px;
+    height: 2px;
     transition: all 0.3s;
     background-color: hsla(219.52, 74.12%, 33.33%, 1);
 }
@@ -64,6 +65,10 @@
   padding: 5px 14px;
   border-radius: 30px;
   font-size: 12px;
+  transition: all 0.3s;
   color: #fff;
   background-color: #121212;
+}
+.lang a:hover{
+  background-color: #333;
 }
